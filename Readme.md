@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Сергей Климов](https://up.htmlacademy.ru/htmlcss/23/user/701715).
-* Наставник: `Неизвестно`.
+* Наставник: [Илья Туров](https://htmlacademy.ru/profile/turov).
 
 ---
 
