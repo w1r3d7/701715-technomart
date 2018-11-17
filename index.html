@@ -3,12 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="secondary-menu">
-        <p class="main-logo">Техномарт</p>
-        <input type="search" placeholder="Поиск:">
+        <a><p class="main-logo">Техномарт</p></a>
+        <form>
+          <input type="search" placeholder="Поиск:">
+        </form>
         <a href="boormarks.html">Закладки: 0</a>
         <a href="cart.html">Корзина: 0</a>
         <a href="checkout.html">Оформить заказ</a>
@@ -48,7 +52,7 @@
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
         <a href="#" ><img src="img/map.jpg" alt="Карта с расположением компании «Техномарт»" width="300" height="158"></a>
-        <a class="btn" href="contact-us.html">Заблудились? Напишите нам!</a>
+        <button type="button">Напишите нам!</button> 
       </section>
     </main>
     <footer class="main-footer">
@@ -69,6 +73,16 @@
           <li><a href="specials.html">Спецпредложения</a></li>
         </ul>
       </nav>
+      <div class="contact-us">
+        <p>© 2010-2017 Компания «Техномарт» Все права защищены</p>
+        <ul class="social-buttons">
+          <li><a href="vk.com">Мы во Вконтакте</a></li>
+          <li><a href="facebook.com">Мы в Фейсбуке</a></li>
+          <li><a href="instagram.com">Мы в Инстаграме</a></li>
+        </ul>
+        <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+        <p>Разработано - <a href="htmlacademy.ru">htmlacademy.ru</a></p>
+      </div>
     </footer>
   </body>
 </html>
