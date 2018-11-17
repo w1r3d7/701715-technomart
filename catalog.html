@@ -43,7 +43,7 @@
       <ul class="breadcrumbs">
         <li><a href="/">Домой</a></li>
         <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="tool.html">Инструмент</li>
+        <li><a href="tool.html">Инструмент</a></li>
         <li><a>Перфораторы</a>
       </ul>
       <h1>Перфораторы</h1>
@@ -57,23 +57,24 @@
           <label><input type="checkbox">Dewalt</label>
           <label><input type="checkbox">Hitachi</label>
           <p>Питание:</p>
-          <label><input type="radio" checked>Аккумуляторные</label>
-          <label><input type="radio">Сетевые</label>
+          <label><input type="radio" name="power" checked>Аккумуляторные</label>
+          <label><input type="radio" name="power">Сетевые</label>
           <button type="submit">Показать</button>
         </form>
       </section>
       <section class="product-list">
+        <h2 class="visually-hidden">Каталог товаров</h2>
         <ul>
           <li>
             <h3>Перфоратор Bosch bfg 3000</h3>
             <img src="img/bfg3000.jpg" alt="Перфоратор Bosch bfg 3000" width="127" height="112">
-            <p><del>22500 р.</del></p>
+            <p class="discount">22500 р.</p>
             <p>15500 р.</p>
           </li>
           <li>
             <h3>Перфоратор Bosch bfg 6000</h3>
             <img src="img/bfg6000.jpg" alt="Перфоратор Bosch bfg 6000" width="144" height="128">
-            <p><del>30500 р.</del></p>
+            <p class="discount">30500 р.</p>
             <p>25500 р.</p>
           </li>
           <li class="new-label">
@@ -84,13 +85,13 @@
           <li>
             <h3>Перфоратор Bosch bfg 3000</h3>
             <img src="img/bfg3000.jpg" alt="Перфоратор Bosch bfg 3000" width="127" height="112">
-            <p><del>22500 р.</del></p>
+            <p class="discount">22500 р.</p>
             <p>15500 р.</p>
           </li>
           <li>
             <h3 class="new-label">Перфоратор Bosch bfg 6000</h3>
             <img src="img/bfg6000.jpg" alt="Перфоратор Bosch bfg 6000" width="144" height="128">
-            <p><del>30500 р.</del></p>
+            <p class="discount">30500 р.</p>
             <p>25500 р.</p>
           </li>
           <li>
@@ -101,13 +102,13 @@
           <li>
             <h3 class="new-label">Перфоратор Bosch bfg 3000</h3>
             <img src="img/bfg3000.jpg" alt="Перфоратор Bosch bfg 3000" width="127" height="112">
-            <p><del>22500 р.</del></p>
+            <p class="discount">22500 р.</p>
             <p>15500 р.</p>
           </li>
           <li>
             <h3>Перфоратор Bosch bfg 6000</h3>
             <img src="img/bfg6000.jpg" alt="Перфоратор Bosch bfg 6000" width="144" height="128">
-            <p><del>30500 р.</del></p>
+            <p class="discount">30500 р.</p>
             <p>25500 р.</p>
           </li>
           <li>
@@ -116,6 +117,12 @@
             <p>12500 р.</p>
           </li>
         </ul>
+        <ul class="pagination-list">
+            <li class="pagination-item pagination-item-current"><a>1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item"><a href="#">Следующая</a></li>
+          </ul>
       </section>
       <section class="about-products">
         <h2>Пара слов о перфораторах</h2>
