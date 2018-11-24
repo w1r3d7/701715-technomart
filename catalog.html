@@ -9,13 +9,13 @@
   <body>
     <header class="main-header">  
       <div class="secondary-menu">
-        <a class="logo-link"><span class="logo">Техномарт</span></a>
+        <a class="logo-link" href="/">Техномарт</a>
         <form class="search-form">
           <label class="visually-hidden" for="search">Поле поиска</label>
           <input id="search" type="search" placeholder="Поиск:">
         </form>
-        <a class="header-link header-link-bookmarks" href="#">Закладки: 0</a>
-        <a class="header-link header-link-cart cart-not-empty" href="#">Корзина: 10</a>
+        <a class="header-link header-link-bookmarks" href="#">Закладки: <output>0</output></a>
+        <a class="header-link header-link-cart cart-not-empty" href="#">Корзина: <output>10</output></a>
         <a class="header-link-order" href="#">Оформить заказ</a>
       </div>
       <div class="header-submenu"> 
@@ -23,21 +23,21 @@
         <a href="tel:+78125550555">+7(812)555-05-55</a>
         <address class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</address>
         <div class="profile-info">
-            <p>
+            <div>
               <a href="#">Равшан Джамшутович</a>
               <a href="#">Выйти из личного кабинета</a>
-            </p>
-            <ul class="user-navigation-list">
-              <li class="user-navigation-item"><a href="#">Мои заказы</a></li>
-              <li class="user-navigation-item"><a href="#">Личный кабинет</a></li>
-            </ul>
+            </div>
+            <div class="user-navigation">
+              <a href="#">Мои заказы</a>
+              <a href="#">Личный кабинет</a>
+            </div>
         </div>
       </div>
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-item"><a>Главная</a></li>
+          <li class="navigation-item"><a href="/">Главная</a></li>
           <li class="navigation-item"><a href="#">Компания</a></li>
-          <li class="navigation-item"><a href="catalog.html">Каталог</a></li>
+          <li class="navigation-item"><a>Каталог</a></li>
           <li class="navigation-item"><a href="#">Новости</a></li>
           <li class="navigation-item"><a href="#">Спецпредложения</a></li>
           <li class="navigation-item"><a href="#">Доставка</a></li>
@@ -56,8 +56,7 @@
       <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form>
-          <label for="filter-search">Фильтр:</label>
-          <input id="filter-search" type="search">
+          <p class="filter-title">Фильтр:</p>
           <fieldset>
             <legend>Цена:</legend>
             <div class="price-slider"></div>
@@ -194,7 +193,7 @@
       <section class="about-products">
         <h2 class="about-products-title">Пара слов о перфораторах</h2>
         <p class="about-products-text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-        <p class="about-products-text">Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+        Существуют&nbsp;электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </section>
     </main>
     <footer class="main-footer">
