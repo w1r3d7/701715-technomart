@@ -149,6 +149,22 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.profile-info {
+  background-color: #ffffff;
+}
+
+.profile-info a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.profile-navigation a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+}
+
 .navigation {
   color: #ffffff;
 
@@ -170,5 +186,131 @@ color: rgba(255, 255, 255, 0.5);
 
 .navigation-item a {
   color: #ffffff;
+}
+
+
+/* MAIN */
+
+
+.section-title {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.section-text {
+  font-family: "PT SANS", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.companies-list {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.btn {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+  border: 0;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #ca2c37;
+}
+
+.btn:active {
+  background-color: #ba2732;
+}
+
+/* FOOTER */ 
+
+.main-footer {
+  color: #ffffff;
+
+  background-color: #32425c;
+}
+
+.footer-contact-us {
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.logo-footer {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.footer-address {
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24px;
+  color: #f1f5f7;
+}
+
+.footer-address a {
+  color: #f1f5f7;
+}
+
+.footer-navigation {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+
+.footer-navigation-list-1 a {
+  color: #f1f5f7;
+}
+
+.footer-navigation-list-2 a {
+  color: #ffd180;
+}
+
+.footer-navigation-list-1 a:hover,
+.footer-navigation-list-1 a:focus,
+.footer-navigation-list-2 a:hover,
+.footer-navigation-list-2 a:focus {
+  text-decoration: underline;
+}
+
+.footer-navigation-list-1 a:active {
+  color: rgba(241, 245, 247, 0.5);
+  text-decoration: none;
+}
+
+.footer-navigation-list-2 a:active {
+  color: rgba(255, 209, 128, 0.5);
+  text-decoration: none;
+}
+
+.copyright {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.feedback,
+.developed {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.feedback a,
+.developed a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffd180;
 }
 
