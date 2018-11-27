@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Техномарт - каталог перфораторы</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -76,8 +76,8 @@
       <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter-form" method="GET" action="#" >
-          <p class="filter-title">Фильтр:</p>
-          <fieldset>
+          <h4 class="filter-title">Фильтр:</h4>
+          <fieldset class="price">
             <legend>Цена:</legend>
             <div class="price-slider"></div>
             <label class="visually-hidden" for="min-price">Минимальная цена</label>
@@ -86,7 +86,7 @@
             <label class="visually-hidden" for="max-price">Максимальная цена</label>
             <input id="max-price" type="text" placeholder="30000">
           </fieldset>
-          <fieldset>
+          <fieldset class="manufacturer">
             <legend>Производители:</legend>
             <label><input type="checkbox" checked>BOSCH</label>
             <label><input type="checkbox">Интерскол</label>
@@ -107,7 +107,7 @@
         <div class="sorting">
           <h4 class="sorting-title">Сортировка:</h4>
           <ul class="sorting-list">
-            <li class="sorting-item"><a href="#">По цене</a></li>
+            <li class="sorting-item active-item"><a href="#">По цене</a></li>
             <li class="sorting-item"><a href="#">По типу</a></li>
             <li class="sorting-item"><a href="#">По функционалу</a></li>
             <li class="sorting-item"><a href="#">По возрастанию</a></li>
