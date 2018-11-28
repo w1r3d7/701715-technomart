@@ -57,19 +57,23 @@ a {
   background-color: #ffffff;
 }
 
-.search-form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.search-form input::-webkit-input-placeholder { 
+  /* Chrome/Opera/Safari */
   color: #ffffff;
 }
 
-.search-form input::-moz-placeholder { /* Firefox 19+ */
+.search-form input::-moz-placeholder { 
+  /* Firefox 19+ */
   color: #ffffff;
 }
 
-.search-form input:-ms-input-placeholder { /* IE 10+ */
+.search-form input:-ms-input-placeholder { 
+  /* IE 10+ */
   color: #ffffff;
 }
 
-.search-form input:-moz-placeholder { /* Firefox 18- */
+.search-form input:-moz-placeholder { 
+  /* Firefox 18- */
   color: #ffffff;
 }
 
@@ -180,8 +184,8 @@ a {
 .profile-navigation a {
   font-size: 16px;
   line-height: 18px;
-  color: #32425c;
   text-decoration: underline;
+  color: #32425c;
 }
 
 .profile-navigation a:hover,
@@ -230,8 +234,8 @@ color: rgba(255, 255, 255, 0.5);
 .tiles-link {
   font-size: 14px;
   line-height: 18px;
-  color: #ffffff;
   text-transform: uppercase;
+  color: #ffffff;
 
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 1px;
@@ -271,8 +275,8 @@ color: rgba(255, 255, 255, 0.5);
 .section-title {
   font-size: 30px;
   line-height: 30px;
-  color: #000000;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .section-text {
@@ -385,8 +389,8 @@ color: rgba(255, 255, 255, 0.5);
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
-  color: #000000;
   text-transform: uppercase;
+  color: #000000;
 
   background-color: #f7f3ec;
 }
@@ -406,19 +410,23 @@ color: rgba(255, 255, 255, 0.5);
   border: 0;
 }
 
-.price input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.price input::-webkit-input-placeholder { 
+  /* Chrome/Opera/Safari */
   color: #000000;
 }
 
-.price input::-moz-placeholder { /* Firefox 19+ */
+.price input::-moz-placeholder { 
+  /* Firefox 19+ */
   color: #000000;
 }
 
-.price input:-ms-input-placeholder { /* IE 10+ */
+.price input:-ms-input-placeholder { 
+  /* IE 10+ */
   color: #000000;
 }
 
-.price input:-moz-placeholder { /* Firefox 18- */
+.price input:-moz-placeholder { 
+  /* Firefox 18- */
   color: #000000;
 }
 
