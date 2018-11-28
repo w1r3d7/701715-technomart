@@ -5,7 +5,7 @@ body {
   font-size: 17px;
   line-height: 17px;
   font-weight: 400;
-  color: #ffffff;
+  color: #000000;
 }
 
 a {
@@ -292,6 +292,7 @@ color: rgba(255, 255, 255, 0.5);
 }
 
 .filter-title,
+.sorting-title,
 .sorting {
   font-size: 13px;
   line-height: 18px;
@@ -366,6 +367,91 @@ color: rgba(255, 255, 255, 0.5);
 .active-item a {
   color: #ee3643;
   border: 0;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item-title {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.discount {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: line-through;
+  color: #999999;
+}
+
+.item-price {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+
+.pagination-list a {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 1px;
+}
+
+.pagination-item-current a {
+  color: #ffffff;
+
+  background-color: #ee3643;
+  border: none;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: #ffffff;
+
+  border: none;
+}
+
+.pagination-list a:hover,
+.pagination-list a:focus {
+  border-color: #bdc6ca;
+}
+
+.pagination-list a:active {
+  color: #000000;
+
+  border-color: #ee3643;
+}
+
+.about-products {
+  color: #000000;
+
+  background-color: #f2f6f8;
+}
+
+.about-products-title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.about-products-text {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 /* FOOTER */ 
