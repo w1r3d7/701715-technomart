@@ -316,6 +316,28 @@ color: rgba(255, 255, 255, 0.5);
   background-color: #ba2732;
 }
 
+.feedback-form label {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  border: 2px solid #d7dcde;
+}
+
+.feedback-form input:hover,
+.feedback-form input:focus,
+.feedback-form textarea:hover,
+.feedback-form textarea:focus {
+  border: 2px solid #b5b5b5;
+  outline: none;
+}
+
+.feedback-form input:active,
+.feedback-form textarea:active {
+  border: 2px solid #ee3643;
+}
 
 /* CATALOG MAIN */
 
