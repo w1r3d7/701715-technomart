@@ -218,11 +218,46 @@ color: rgba(255, 255, 255, 0.5);
 
 /* INDEX MAIN */
 
+.tiles-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.tiles-link {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.tiles-item:nth-child(2) {
+  background-color: #ffbf47;
+}
+
+.tiles-item:nth-child(3) {
+  background-color: #3bbce3;
+}
+
+.tiles-item:nth-child(5) {
+  background-color: #dc91d8;
+}
+
+.tiles-item:nth-child(6) {
+  background-color: #8ed78f;
+}
+
+.tiles-item:nth-child(7) {
+  background-color: #ffc047;
+}
+
 
 .section-title {
   font-size: 30px;
   line-height: 30px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .section-text {
@@ -231,6 +266,15 @@ color: rgba(255, 255, 255, 0.5);
   line-height: 24px;
   color: #000000;
 }
+
+.promo-title {
+  color: #32425c;
+}
+
+.popular-heading {
+  background-color: #f9f5f0;
+}
+
 
 .companies-list {
   font-size: 18px;
