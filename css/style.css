@@ -230,7 +230,20 @@ color: rgba(255, 255, 255, 0.5);
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
+
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 1px;
 }
+
+.tiles-link:hover,
+.tiles-link:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.tiles-link:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 
 .tiles-item:nth-child(2) {
   background-color: #ffbf47;
