@@ -15,14 +15,34 @@ a {
 /* HEADER */
 
 .secondary-menu {
+  display: flex;
+  justify-content: space-between;
+
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
+}
 
+.secondary-menu-wrapper {
   background-color: #293449;
 }
 
+.menu-wrapper {
+  color: #ffffff;
+
+  background-color: #f4f7f9;
+}
+
+.container {
+  width: 940px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+
 .logo-link {
+  width: 220px;
+
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
@@ -41,6 +61,8 @@ a {
 }
 
 .search-form input {
+  width: 230px;
+
   color: #ffffff;
 
   background-color: #293449;
@@ -78,6 +100,8 @@ a {
 }
 
 .header-link {
+  width: 150px;
+
   color: #ffffff;
 }
 
@@ -106,6 +130,8 @@ a {
 }
 
 .header-link-order {
+  width: 150px;
+
   color: #ffffff;
 
   background-color: #63a63e;
@@ -123,16 +149,26 @@ a {
 }
 
 .header-submenu {
-  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
 
-  background-color: #f3f7f9;
+  padding-top: 46px;
 }
 
 .main-title {
+  margin: 0;
+  width: 200px;
+  padding-left: 52px;
+  padding-right: 52px;
+
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
   color: #ee3643;
+}
+
+.header-contacts {
+  width: 270px;
 }
 
 .header-phone {
@@ -150,7 +186,20 @@ a {
   color: #32425c;
 }
 
+
+.user-navigation-item:nth-child(1) a {
+  padding-left: 48px;
+  padding-right: 27px;
+}
+
+.user-navigation-item:nth-child(2) a {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 .user-navigation-list {
+  display: flex;
+
   list-style: none;
 }
 
@@ -205,6 +254,8 @@ a {
 }
 
 .navigation-list {
+  display: flex;
+
   list-style: none;
 }
 
@@ -560,14 +611,6 @@ color: rgba(255, 255, 255, 0.5);
   border: none;
 }
 
-.pagination-item-current a:hover,
-.pagination-item-current a:focus,
-.pagination-item-current a:active {
-  color: #ffffff;
-
-  border: none;
-}
-
 .pagination-list a:hover,
 .pagination-list a:focus {
   border-color: #bdc6ca;
@@ -577,6 +620,14 @@ color: rgba(255, 255, 255, 0.5);
   color: #000000;
 
   border-color: #ee3643;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: #ffffff;
+
+  border: none;
 }
 
 .about-products {
