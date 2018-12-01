@@ -172,6 +172,12 @@ a {
 }
 
 .header-phone {
+  display: block;
+  padding-right: 52px;
+  padding-left: 74px;
+  padding-top: 13px;
+  padding-bottom: 11px;
+
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
@@ -204,6 +210,9 @@ a {
 }
 
 .user-navigation-list a {
+  padding-top: 13px;
+  padding-bottom: 11px;
+
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -255,6 +264,7 @@ a {
 
 .navigation-list {
   display: flex;
+  justify-content: space-around;
 
   list-style: none;
 }
@@ -352,6 +362,21 @@ color: rgba(255, 255, 255, 0.5);
 .manufacturer-item {
   border: 1px solid #e5e5e5;
 }
+
+.index-colums {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 86px;
+}
+
+.about-company {
+  width: 540px;
+}
+
+.contacts {
+  width: 300px;
+}
+
 
 .companies-list {
   font-size: 18px;
@@ -656,6 +681,11 @@ color: rgba(255, 255, 255, 0.5);
   background-color: #32425c;
 }
 
+.footer-colums {
+  display: flex; 
+  justify-content: space-between;
+}
+
 .footer-contact-us {
   color: #ffffff;
 
@@ -663,6 +693,8 @@ color: rgba(255, 255, 255, 0.5);
 }
 
 .main-footer ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -687,6 +719,16 @@ color: rgba(255, 255, 255, 0.5);
   line-height: 24px;
 }
 
+.footer-navigation-list-1,
+.footer-navigation-list-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 550px;
+}
+
+.footer-navigation-list-2 {
+  padding-left: 26px;
+}
 
 .footer-navigation-list-1 a {
   color: #f1f5f7;
@@ -713,6 +755,10 @@ color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
 }
 
+.copyright-block {
+  width: 230px;
+}
+
 .copyright {
   font-size: 16px;
   line-height: 18px;
@@ -720,6 +766,8 @@ color: rgba(255, 255, 255, 0.5);
 
 .feedback,
 .developed {
+  width: 140px;
+
   font-size: 16px;
   line-height: 18px;
 }
