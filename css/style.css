@@ -286,6 +286,8 @@ a {
 .navigation-list {
   display: flex;
   justify-content: space-around;
+  margin: 0px;
+  padding: 0px;
 
   list-style: none;
 }
@@ -845,6 +847,9 @@ color: rgba(255, 255, 255, 0.5);
 }
 
 .logo-footer {
+  display: block;
+  margin-bottom: 35px;
+
   font-size: 30px;
   line-height: 30px;
 }
@@ -861,6 +866,8 @@ color: rgba(255, 255, 255, 0.5);
 }
 
 .footer-navigation {
+  padding-top: 40px;
+
   font-size: 18px;
   line-height: 24px;
 }
@@ -869,11 +876,16 @@ color: rgba(255, 255, 255, 0.5);
 .footer-navigation-list-2 {
   display: flex;
   justify-content: space-between;
-  width: 550px;
+}
+
+ul.footer-navigation-list-1 {
+  width: 547px;
+  padding-left: 3px;
 }
 
 ul.footer-navigation-list-2 {
-  padding-left: 23px;
+  padding-left: 26px;
+  width: 524px;
 }
 
 .footer-navigation-list-1 a {
