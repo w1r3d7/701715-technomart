@@ -203,21 +203,29 @@ a {
   font-style: normal;
   line-height: 24px;
   color: #32425c;
+  text-align: center;
 }
 
 
 .user-navigation-item:nth-child(1) a {
-  padding-left: 48px;
-  padding-right: 27px;
+  display: block;
+  width: 120px;
+
 }
 
 .user-navigation-item:nth-child(2) a {
-  padding-left: 24px;
-  padding-right: 24px;
+  display: block;
+  width: 150px;
 }
 
 .user-navigation-list {
   display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  width: 281px;
+
+  text-align: center;
 
   list-style: none;
 }
@@ -366,6 +374,11 @@ color: rgba(255, 255, 255, 0.5);
 }
 
 .promo-title {
+  margin: 0;
+  padding: 0;
+  padding-left: 62px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   color: #32425c;
 }
 
@@ -402,6 +415,7 @@ color: rgba(255, 255, 255, 0.5);
 .services {
   padding-top: 62px;
   padding-bottom: 102px;
+  margin-bottom: 78px;
 
   background-color: #f4f8f9;
 }
@@ -520,8 +534,6 @@ color: rgba(255, 255, 255, 0.5);
   background-color: #f2f6f8;
 }
 
-
-
 .filter-title,
 .sorting-title,
 .sorting {
@@ -534,19 +546,37 @@ color: rgba(255, 255, 255, 0.5);
   background-color: #f7f3ec;
 }
 
+.filter-form fieldset {
+  padding: 0;
+  margin: 0;
+
+  border: 0;
+}
+
 .filter-form legend {
   font-size: 17px;
   line-height: 31px;
   font-weight: 700;
 }
 
+.price-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 .price input {
+  width: 95px;
+  height: 38px;
+
   font-size: 17px;
   line-height: 18px;
   color: #000000;
+  text-align: center;
 
   background-color: #f7f3ec;
   border: 0;
+  border-radius: 3px;
 }
 
 .price input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -628,6 +658,8 @@ color: rgba(255, 255, 255, 0.5);
 
   list-style: none;
 }
+
+
 
 .catalog-list {
   display: flex;
@@ -717,13 +749,27 @@ color: rgba(255, 255, 255, 0.5);
   margin-bottom: 60px;
 }
 
+.pagination-item {
+  margin-right: 10px;
+}
+
+.pagination-item:last-child a{
+  padding-right: 31px;
+  padding-left: 31px;
+}
+
 .pagination-list a {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  padding: 13px 16px;
+
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
 
   border: 1px solid #e5e5e5;
-  border-radius: 1px;
+  border-radius: 3px;
 }
 
 .pagination-item-current a {
@@ -826,8 +872,8 @@ color: rgba(255, 255, 255, 0.5);
   width: 550px;
 }
 
-.footer-navigation-list-2 {
-  padding-left: 26px;
+ul.footer-navigation-list-2 {
+  padding-left: 23px;
 }
 
 .footer-navigation-list-1 a {
