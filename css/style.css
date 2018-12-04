@@ -1077,15 +1077,27 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 218px;
 
   border: 1px solid #e5e5e5;
 }
 
+.img-block {
+  display: flex;
+  align-items: center;
+  height: 168px;
+}
+
+
 .hover-links {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
+
+  display:none ;
 }
 
 .hover-links a {
@@ -1126,12 +1138,16 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-title {
+  order: 1;
+
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
 }
 
 .discount {
+  order: 2;
+
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
@@ -1141,6 +1157,8 @@ input[type="radio"].visually-hidden {
 }
 
 .item-price {
+  order: 3;
+
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
