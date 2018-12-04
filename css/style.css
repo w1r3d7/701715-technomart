@@ -1158,6 +1158,11 @@ input[type="radio"].visually-hidden {
 
 .item-price {
   order: 3;
+  background-color: #ee3643;
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-left: 36px;
 
   font-size: 17px;
   line-height: 18px;
