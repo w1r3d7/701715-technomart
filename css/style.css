@@ -738,6 +738,10 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/icon-5.svg");
 }
 
+.popular-products {
+  margin-bottom: 21px;
+}
+
 .section-title {
   font-size: 30px;
   line-height: 30px;
@@ -768,7 +772,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
   margin-bottom: 20px;
 
   background-color: #f9f5f0;
@@ -1071,7 +1074,11 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  padding-bottom: 52px;
+
+  font-family: "PT SANS", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
 
   list-style: none;
 }
@@ -1085,27 +1092,63 @@ input[type="radio"].visually-hidden {
   border: 1px solid #e5e5e5;
 }
 
+.catalog-item .hover-links {
+  display: none;
+}
+
+.catalog-item:hover .hover-links {
+  display: flex;
+  transition: 
+}
+
+.catalog-item:hover {
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
 .img-block {
   display: flex;
   align-items: center;
-  height: 168px;
+  height: 180px;
 }
 
 
 .hover-links {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 45px;
+
+  width: 218px;
+  height: 100px;
+
+  background-color: #ffffff;
+
+
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
-
-  display:none ;
 }
 
 .hover-links a {
+
+  width: 135px;
+
+  padding-top: 12px;
+  padding-bottom: 8px;
+
+
+  margin-bottom: 10px;
+
+
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
 
   background-color: #63a63e;
-  border-radius: 1px;
+  border-radius: 3px;
+  box-shadow: 0 3px 0px #367315;
 }
 
 .hover-links a:hover,
@@ -1115,9 +1158,14 @@ input[type="radio"].visually-hidden {
 
 .hover-links a:active {
   background-color: #518534;
+  box-shadow: 0 3px 0px #518534;
 }
 
 .hover-links button {
+  width: 135px;
+  padding-top: 9px;
+  padding-bottom: 8px;
+
   font: inherit;
   text-align: center;
   color: #32425c;
@@ -1140,16 +1188,26 @@ input[type="radio"].visually-hidden {
 .catalog-item-title {
   order: 1;
 
+  margin: 0;
+  margin-bottom: 11px;
+  padding-left: 30px;
+  padding-right: 31px;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
+  text-align: center;
 }
 
 .discount {
   order: 2;
 
-  font-size: 18px;
-  line-height: 20px;
+  margin: 0;
+  margin-left: 4px;
+  margin-bottom: 9px;
+  min-height: 18px;
+
+  font-size: 17px;
+  line-height: 18px;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: line-through;
@@ -1157,11 +1215,16 @@ input[type="radio"].visually-hidden {
 }
 
 .item-price {
+  position: relative;
+  
   order: 3;
-  background-color: #ee3643;
-  padding-top: 10px;
-  padding-right: 40px;
-  padding-bottom: 10px;
+
+  margin: 0;
+  margin-bottom: 20px;
+  margin-right: 4px;
+  padding-top: 11px;
+  padding-right: 27px;
+  padding-bottom: 9px;
   padding-left: 36px;
 
   font-size: 17px;
@@ -1169,7 +1232,22 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
+  background-color: #ee3643;
+  border-radius: 3px;
 }
+
+.item-price::after {
+  content: "";
+
+  position: absolute;
+  right: -31px;
+  bottom: 0px;
+
+  border: 19px solid #ffffff;
+
+  border-left-color: #ee3643;
+}
+
 
 .pagination-list {
   margin-bottom: 60px;
