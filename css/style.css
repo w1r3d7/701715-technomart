@@ -750,7 +750,7 @@ input[type="radio"].visually-hidden {
 }
 
 .section-text {
-  font-family: "PT SANS", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
@@ -786,7 +786,7 @@ input[type="radio"].visually-hidden {
 }
 
 .popular-manufacturer {
-  padding-bottom: 85px;
+  padding-bottom: 64px;
 }
 
 .manufacturer-list {
@@ -805,7 +805,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
 
   margin-bottom: 20px;
-  width: 220px;
+  width: 218px;
   height: 143px;
 
   border: 1px solid #e5e5e5;
@@ -823,11 +823,96 @@ input[type="radio"].visually-hidden {
 }
 
 .services {
-  padding-top: 62px;
+  padding-top: 66px;
   padding-bottom: 102px;
   margin-bottom: 78px;
 
   background-color: #f4f8f9;
+}
+
+.services-title {
+  margin: 0;
+  margin-bottom: 26px;
+
+  font-weight: 400;
+}
+
+.services .section-text {
+  margin: 0;
+}
+
+.section-slider {
+  display: flex;
+
+  padding-top: 67px;
+}
+
+.buttons-list,
+.services-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.buttons-list {
+  position: relative;
+
+  width: 240px;
+  margin-right: 80px;
+}
+
+.buttons-list::after {
+  content: "";
+
+  position: absolute;
+  right: 0px;
+  top: -40px;
+
+
+  width: 10px;
+  height: 272px;
+
+  background-image: url("../img/shadow.png");
+}
+
+.buttons-list button {
+  width: 240px;
+  height: 61px;
+  padding-left: 22px;
+  margin-bottom: 1px;
+
+
+  font: inherit;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: left;
+  background-color: #32425c;
+  border: 0;
+  box-shadow: inset 0px 1px 0px #405069,
+                    0px 1px 0px #293449;
+}
+
+button.active-button {
+  height: 61px;
+
+  color: #32425c;
+
+  background-color: #ffffff;
+  box-shadow: inset 0px 1px 0px #ffffff,
+                    0px 1px 0px #ffffff;
+  ;
+}
+
+.services-item-title {
+  margin: 0;
+
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #32425c;
 }
 
 .index-colums {
@@ -843,7 +928,6 @@ input[type="radio"].visually-hidden {
 .contacts {
   width: 300px;
 }
-
 
 .companies-list {
   font-size: 18px;
@@ -1075,7 +1159,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
 
-  font-family: "PT SANS", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
