@@ -1375,8 +1375,8 @@ button.active-button {
   margin-right: 65px;
 }
 
-.sorting-item a:hover,
-.sorting-item a:focus {
+.sorting-item a:not(.sort-down):not(.sort-up):hover,
+.sorting-item a:not(.sort-down):not(.sort-up):focus {
   color: #000000;
   border-bottom: 1px solid #ee3643;
 }
@@ -1394,6 +1394,14 @@ a.sort-up {
 .active-item a {
   color: #ee3643;
   border: 0;
+}
+
+.sorting-item a:hover path {
+  fill: #231f20;
+}
+
+.active-item a:hover path{
+  fill: #ee3643;
 }
 
 .active-item path  {
@@ -1424,6 +1432,10 @@ a.sort-up {
   margin-bottom: 20px;
 }
 
+.product-list .catalog-list {
+  margin-bottom: 42px;
+}
+
 .catalog-list {
   display: flex;
   justify-content: space-between;
@@ -1440,6 +1452,8 @@ a.sort-up {
 }
 
 .catalog-item {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1448,13 +1462,26 @@ a.sort-up {
   border: 1px solid #e5e5e5;
 }
 
+.new-label::before {
+  content: "";
+
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  z-index: 1;
+  width: 60px;
+  height: 59px;
+
+  background-image: url("../img/new\ flag.png");
+  background-repeat: no-repeat;
+}
+
 .catalog-item .hover-links {
   display: none;
 }
 
 .catalog-item:hover .hover-links {
   display: flex;
-  transition: 
 }
 
 .catalog-item:hover {
@@ -1606,11 +1633,11 @@ a.sort-up {
 
 
 .pagination-list {
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 .pagination-item {
-  margin-right: 10px;
+  margin-right: 9px;
 }
 
 .pagination-item:last-child a{
@@ -1619,14 +1646,12 @@ a.sort-up {
 }
 
 .pagination-list a {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  padding: 13px 16px;
+  padding: 10px 15px;
 
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+  color: #000000;
 
   border: 1px solid #e5e5e5;
   border-radius: 3px;
@@ -1636,7 +1661,7 @@ a.sort-up {
   color: #ffffff;
 
   background-color: #ee3643;
-  border: none;
+  border: 1px solid #ee3643;
 }
 
 .pagination-list a:hover,
@@ -1655,12 +1680,12 @@ a.sort-up {
 .pagination-item-current a:active {
   color: #ffffff;
 
-  border: none;
+  border: 1px solid #ee3643;
 }
 
 .about-products {
   padding-top: 62px; 
-  padding-bottom: 72px;
+  padding-bottom: 55px;
 
   color: #000000;
 
@@ -1668,8 +1693,12 @@ a.sort-up {
 }
 
 .about-products-title {
+  margin: 0;
+  margin-top: 3px;
+  margin-bottom: 26px;
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -1812,6 +1841,12 @@ ul.footer-navigation-list-2 {
   border-radius: 50%;
 
   background-color: #212a3a;
+}
+
+.social-item:hover,
+.social-item:focus,
+.social-item:active {
+  background-color: #ee3643;
 }
 
 .social-item:nth-child(1) {
