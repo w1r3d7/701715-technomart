@@ -753,6 +753,8 @@ input[type="radio"].visually-hidden {
 }
 
 .section-text {
+  margin: 0;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -996,14 +998,68 @@ button.active-button {
   width: 540px;
 }
 
+.about-company .section-title {
+  margin-bottom: 26px;
+}
+
+.about-company .section-text:nth-child(3) {
+  width: 390px;
+
+  padding-top: 24px;
+  padding-bottom: 21px;
+}
+
+.companies-list {
+  padding: 0;
+  padding-left: 36px;
+  margin: 0;
+  margin-bottom: 17px;
+
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+
+  list-style:none;
+}
+
+.companies-item {
+  position: relative;
+
+  padding-bottom: 20px;
+}
+
+.companies-item::before {
+  content: "";
+
+  position: absolute;
+  left: -36px;
+  top: 9px;
+
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
+}
+
+.contacts .section-title {
+  margin-bottom: 26px;
+}
+
+.contacts .section-text {
+  width: 178px;
+  margin-bottom: 31px;
+}
+
 .contacts {
   width: 300px;
 }
 
-.companies-list {
-  font-size: 18px;
-  line-height: 20px;
-  color: #000000;
+.contacts img {
+  margin-bottom: 37px;
+}
+
+.btn-contacts {
+  width: 100%;
+  padding-right: 35px;
 }
 
 .feedback-form label {
@@ -1492,7 +1548,7 @@ button.active-button {
 }
 
 .footer-contact-us {
-  padding-top: 35px;
+  padding-top: 36px;
   padding-bottom: 31px;
 
   color: #ffffff;
@@ -1501,7 +1557,7 @@ button.active-button {
 }
 
 .logo-footer {
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   padding-top: 18px;
   padding-bottom: 14px;
 
@@ -1510,10 +1566,13 @@ button.active-button {
 }
 
 .footer-contact-info {
-  padding-bottom: 52px;
+  padding-bottom: 48px;
+  padding-right: 50px;
 }
 
 .footer-address {
+  padding-left: 4px;
+
   font-size: 18px;
   font-style: normal;
   line-height: 24px;
@@ -1525,7 +1584,7 @@ button.active-button {
 }
 
 .footer-navigation {
-  padding-top: 40px;
+  padding-top: 37px;
 
   font-size: 18px;
   line-height: 24px;
