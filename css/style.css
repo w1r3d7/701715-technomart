@@ -1263,9 +1263,9 @@ button.active-button {
 }
 
 .filter-title {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 19px;
   margin: 0;
 }
 
@@ -1278,6 +1278,8 @@ button.active-button {
 }
 
 .filter-form legend {
+  padding-top: 12px;
+
   font-size: 17px;
   line-height: 31px;
   font-weight: 700;
@@ -1336,32 +1338,41 @@ button.active-button {
 
 
 .sorting {
+  position: relative;
+
   display: flex;
+  margin-bottom: 20px;
 }
 
 .sorting-title {
-  width: 140px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  width: 221px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 19px;
   margin: 0;
 }
 
 .sorting ul{
   display: flex;
-  justify-content: space-between;
-  width: 460px;;
+  width: 460px;
   margin: 0;
   padding: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 10px;
 
   list-style: none;
 }
 
 .sorting-item a {
   color: rgba(0, 0, 0, 0.3);
-  border-bottom: 1px dashed #ee3643;
+  border-bottom: 1px dotted #ee3643;
+}
+
+.sorting-item:nth-child(1) a {
+  margin-right: 71px;
+}
+
+.sorting-item:nth-child(2) a {
+  margin-right: 65px;
 }
 
 .sorting-item a:hover,
@@ -1370,9 +1381,35 @@ button.active-button {
   border-bottom: 1px solid #ee3643;
 }
 
+a.sort-down,
+a.sort-up {
+  border: 0;
+}
+
+.sort-down path,
+.sort-up path {
+  fill: #c5c5c5;
+}
+
 .active-item a {
   color: #ee3643;
   border: 0;
+}
+
+.active-item path  {
+  fill: #ee3643;
+}
+
+.sort-up {
+  position: absolute;
+  right: 49px;
+  top: 11px;
+}
+
+.sort-down {
+  position: absolute;
+  right: 17px;
+  top: 11px;
 }
 
 .pagination-list {
@@ -1383,7 +1420,9 @@ button.active-button {
   list-style: none;
 }
 
-
+.product-list .catalog-item {
+  margin-bottom: 20px;
+}
 
 .catalog-list {
   display: flex;
