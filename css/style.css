@@ -854,7 +854,6 @@ input[type="radio"].visually-hidden {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
-
 }
 
 .delivery {
@@ -945,6 +944,12 @@ input[type="radio"].visually-hidden {
   height: 272px;
 
   background-image: url("../img/shadow.png");
+}
+
+.buttons-list button:hover:not(.active-button),
+.buttons-list button:focus:not(.active-button) {
+  background-color: #293449;
+
 }
 
 .buttons-list button {
