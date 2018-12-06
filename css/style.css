@@ -185,6 +185,7 @@ input[type="radio"].visually-hidden {
   height: 16px;
 
   background-image: url("../img/icon-bookmark.svg");
+  background-repeat: no-repeat;
   opacity: 0.3;
 }
 
@@ -202,6 +203,7 @@ input[type="radio"].visually-hidden {
   height: 15px;
 
   background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
   opacity: 0.3;
 }
 
@@ -285,7 +287,7 @@ input[type="radio"].visually-hidden {
 
 .header-contacts {
   width: 270px;
-  padding-right: 30px;
+  padding-right: 31px;
 
   margin-right: 20px;
 }
@@ -316,6 +318,7 @@ input[type="radio"].visually-hidden {
   height: 19px;
 
   background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
 }
 
 .header-address {
@@ -401,14 +404,64 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.profile {
+  width: 299px;
+}
+
 .profile-info {
+  padding-top: 11px;
+  padding-bottom: 12px;
+
   background-color: #ffffff;
 }
 
 .profile-info a {
+  padding-right: 32px;
+
   font-size: 21px;
   line-height: 21px;
   color: #000000;
+}
+
+.log-in {
+  padding-left: 13px;
+}
+
+.log-in svg {
+  position: relative;
+  top: 2px;
+
+  padding-right: 8px;
+}
+
+.log-out svg {
+  position: relative;
+  top: 2px;
+}
+
+.profile-navigation {
+  position: relative;
+
+  padding-top: 7px;
+  padding-left: 18px;
+}
+
+.profile-navigation::after {
+  content: "";
+
+  position: absolute;
+  top: 14px;
+  left: 107px;
+
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+
+  background-color: #32425c;
+}
+
+.profile-navigation a:first-child {
+  padding-right: 27px;
 }
 
 .profile-navigation a {
@@ -583,6 +636,7 @@ input[type="radio"].visually-hidden {
   width: 22px;
   height: 40px;
   background-image: url("../img/icon-left.svg");
+  background-repeat: no-repeat;
 }
 
 .slider-list {
@@ -664,6 +718,7 @@ input[type="radio"].visually-hidden {
   height: 65px;
 
   background-image: url("../img/icon-1.svg");
+  background-repeat: no-repeat;
 }
 
 .left-column-tiles .tiles-item:nth-of-type(2) {
@@ -682,6 +737,7 @@ input[type="radio"].visually-hidden {
   height: 61px;
 
   background-image: url("../img/icon-2.svg");
+  background-repeat: no-repeat;
 }
 
 .right-column-tiles .tiles-item:nth-of-type(1) {
@@ -700,6 +756,7 @@ input[type="radio"].visually-hidden {
   height: 62px;
 
   background-image: url("../img/icon-3.svg");
+  background-repeat: no-repeat;
 }
 
 .right-column-tiles .tiles-item:nth-of-type(2) {
@@ -718,6 +775,7 @@ input[type="radio"].visually-hidden {
   height: 72px;
 
   background-image: url("../img/icon-4.svg");
+  background-repeat: no-repeat;
 }
 
 .right-column-tiles .tiles-item:nth-of-type(3) {
@@ -736,6 +794,7 @@ input[type="radio"].visually-hidden {
   height: 63px;
 
   background-image: url("../img/icon-5.svg");
+  background-repeat: no-repeat;
 }
 
 .popular-products {
@@ -873,6 +932,7 @@ input[type="radio"].visually-hidden {
   height: 261px;
 
   background-image: url("../img/service-slider-1.png");
+  background-repeat: no-repeat;
 }
 
 .guarantee {
@@ -892,6 +952,7 @@ input[type="radio"].visually-hidden {
   height: 283px;
 
   background-image: url("../img/service-slider-2.png");
+  background-repeat: no-repeat;
 }
 
 .credit {
@@ -909,6 +970,7 @@ input[type="radio"].visually-hidden {
   height: 285px;
 
   background-image: url("../img/service-slider-3.png");
+  background-repeat: no-repeat;
 }
 
 .section-slider {
@@ -944,6 +1006,7 @@ input[type="radio"].visually-hidden {
   height: 272px;
 
   background-image: url("../img/shadow.png");
+  background-repeat: no-repeat;
 }
 
 .buttons-list button:hover:not(.active-button),
@@ -1092,21 +1155,58 @@ button.active-button {
 
 /* CATALOG MAIN */
 
+.catalog {
+  margin-bottom: 21px;
+}
+
 .breadcrumb {
+  
   display: flex;
   padding: 0;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 
   list-style: none;
 }
 
 .breadcrumb a {
+  position: relative;
+
+  padding-right: 40px;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
+  line-height: 18px;
   text-transform: uppercase;
   color: #000000;
 }
+
+.breadcrumb a:not(.home)::before {
+  content: "";
+
+  position: absolute;
+  top: 1px;
+  left: -25px;
+
+  width: 8px;
+  height: 12px;
+
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+}
+
+.home {
+  position: relative;
+  right: 2px;
+  top: 3px;
+
+  display: block;
+  width: 15px;
+  height: 12px;
+  background-image: url("../img/icon-home.svg");
+  background-repeat: no-repeat;
+}
+
 
 .catalog-colums {
   display: flex;
@@ -1136,13 +1236,14 @@ button.active-button {
 
 .catalog-title {
   padding-top: 30px;
-  padding-left: 30px;
-  padding-bottom: 27px;
+  padding-left: 28px;
+  padding-bottom: 29px;
   margin: 0;
   margin-bottom: 20px;
 
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   text-transform: uppercase;
   color: #32425c;
 
