@@ -743,8 +743,11 @@ input[type="radio"].visually-hidden {
 }
 
 .section-title {
+  margin: 0;
+
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   color: #000000;
   text-transform: uppercase;
 }
@@ -825,7 +828,7 @@ input[type="radio"].visually-hidden {
 .services {
   padding-top: 66px;
   padding-bottom: 102px;
-  margin-bottom: 78px;
+  margin-bottom: 75px;
 
   background-color: #f4f8f9;
 }
@@ -841,6 +844,72 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
+.services-item-text {
+  margin: 0;
+  margin-bottom: 31px;
+  width: 378px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+
+}
+
+.delivery {
+  position: relative;
+
+  width: 275px;
+}
+
+.delivery::after {
+  content: "";
+
+  position: absolute;
+  right: -344px;
+  top: -36px;
+  
+  width: 468px;
+  height: 261px;
+
+  background-image: url("../img/service-slider-1.png");
+}
+
+.guarantee {
+  position: relative;
+
+  width: 378px;
+}
+
+.guarantee::after {
+  content: "";
+
+  position: absolute;
+  right: -230px;
+  top: -60px;
+  
+  width: 389px;
+  height: 283px;
+
+  background-image: url("../img/service-slider-2.png");
+}
+
+.credit {
+  position: relative;
+}
+
+.credit::after {
+  content: "";
+
+  position: absolute;
+  right: -230px;
+  top: -60px;
+  
+  width: 465px;
+  height: 285px;
+
+  background-image: url("../img/service-slider-3.png");
+}
+
 .section-slider {
   display: flex;
 
@@ -851,6 +920,7 @@ input[type="radio"].visually-hidden {
 .services-list {
   padding: 0;
   margin: 0;
+
   list-style: none;
 }
 
@@ -907,6 +977,7 @@ button.active-button {
 
 .services-item-title {
   margin: 0;
+  margin-bottom: 24px;
 
   font-size: 36px;
   line-height: 36px;
