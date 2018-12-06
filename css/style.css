@@ -267,7 +267,7 @@ input[type="radio"].visually-hidden {
 .header-submenu {
   display: flex;
   padding-top: 46px;
-  margin-bottom: 39px;
+  margin-bottom: 38px;
 }
 
 .main-title {
@@ -297,7 +297,7 @@ input[type="radio"].visually-hidden {
   display: block;
   padding-right: 39px;
   padding-left: 71px;
-  padding-top: 9px;
+  padding-top: 10px;
   padding-bottom: 8px;
 
   font-size: 21px;
@@ -409,14 +409,14 @@ input[type="radio"].visually-hidden {
 }
 
 .profile-info {
-  padding-top: 11px;
-  padding-bottom: 12px;
+  display: flex;
 
   background-color: #ffffff;
 }
 
 .profile-info a {
-  padding-right: 32px;
+  padding-top: 11px;
+  padding-bottom: 12px;
 
   font-size: 21px;
   line-height: 21px;
@@ -425,6 +425,7 @@ input[type="radio"].visually-hidden {
 
 .log-in {
   padding-left: 13px;
+  padding-right: 32px;
 }
 
 .log-in svg {
@@ -436,7 +437,20 @@ input[type="radio"].visually-hidden {
 
 .log-out svg {
   position: relative;
-  top: 2px;
+  top: 3px;
+  right: -5px;
+}
+
+.log-out:hover path,
+.log-out:focus path,
+.log-in:hover path,
+.log-in:focus path {
+  fill: #32425c;
+}
+
+.log-out:active path,
+.log-in:active path {
+  fill: #c5c5c5;
 }
 
 .profile-navigation {
@@ -1722,7 +1736,7 @@ a.sort-up {
 }
 
 .footer-contact-us {
-  padding-top: 36px;
+  padding-top: 38px;
   padding-bottom: 31px;
 
   color: #ffffff;
