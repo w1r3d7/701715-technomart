@@ -1144,6 +1144,7 @@ button.active-button {
   padding-right: 35px;
 }
 
+
 .modal-login {
   position: fixed;
   z-index: 1;
@@ -1156,7 +1157,8 @@ button.active-button {
   width: 620px;
   height: 423px;
   transform: translateX(-50%) translateY(-50%);
-  box-shadow: 0px -7px 0px #ff5257;
+  box-shadow: 0px -7px 0px #ff5257,
+              0px 20px 40px rgba(0, 0, 0, 0.75);
   background-color: #ffffff;
 }
 
@@ -1268,6 +1270,7 @@ button.active-button {
   padding: 0px;
 
   background-image: url("../img/icon-close.svg");
+  background-color: transparent;
   border: none;
 
   cursor: pointer;
@@ -1277,6 +1280,21 @@ button.active-button {
   padding: 37px 80px;
 
   background-color: #f4f4f4;
+}
+
+.modal-map {
+  position: fixed;
+  z-index: 1;
+
+  display: none;
+
+  top: 50%;
+  left: 50%;
+  width: 940px;
+  height: 446px;
+  transform: translateX(-50%) translateY(-50%);
+  box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
+  background-color: #ffffff;
 }
 
 /* CATALOG MAIN */

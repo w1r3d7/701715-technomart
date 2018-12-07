@@ -1,17 +1,24 @@
-var modal = document.getElementById("feedback-modal");
-var btn = document.getElementById("open-feedback-modal");
-var close = document.getElementById("close-feedback-modal");
+var fmodal = document.getElementById("feedback-modal");
+var fbtn = document.getElementById("open-feedback-modal");
+var fclose = document.getElementById("close-feedback-modal");
 
-btn.onclick = function () {
-    modal.style.display = "block";
+fbtn.onclick = function () {
+    fmodal.style.display = "block";
 }
 
-close.onclick = function () {
-    modal.style.display = "none";
+fclose.onclick = function () {
+    fmodal.style.display = "none";
 }
 
-window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
+
+var mmodal = document.getElementById("map-modal");
+var mbtn = document.getElementById("open-map-modal");
+var mclose = document.getElementById("close-map-modal");
+
+mbtn.onclick = function () {
+    mmodal.style.display = "block";
+}
+
+mclose.onclick = function () {
+    mmodal.style.display = "none";
+}
