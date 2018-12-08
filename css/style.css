@@ -1703,38 +1703,58 @@ a.sort-up {
   border: 0;
 }
 
-.sort-down path,
-.sort-up path {
-  fill: #c5c5c5;
+.sort-up::after {
+  content: "";
+
+  position: absolute;
+  top: 15px;
+  right: 49px;
+
+  border-style: solid;
+  border-width: 0 5.5px 10px 5.5px;
+  border-color: transparent transparent #c5c5c5 transparent;
 }
+
+.active-item .sort-up::after {
+  border-color: transparent transparent #ee3643 transparent;
+}
+
+.active-item .sort-down::after {
+  border-color: #ee3643 transparent transparent  transparent;
+}
+
+.sort-up:hover::after {
+  border-color: transparent transparent #231f20 transparent;
+}
+
+.active-item .sort-up:hover::after {
+  border-color: transparent transparent #ee3643 transparent;
+}
+
+.sort-down:hover::after {
+  border-color:#231f20 transparent transparent transparent;
+}
+
+.active-item .sort-down:hover::after {
+  border-color: #ee3643 transparent transparent  transparent;
+}
+
+.sort-down::after {
+  content: "";
+
+  position: absolute;
+  top: 15px;
+  right: 17px;
+ 
+  border-style: solid;
+  border-width: 10px 5.5px 0 5.5px;
+  border-color: #c5c5c5 transparent transparent transparent;
+}
+
 
 .active-item a {
   color: #ee3643;
   border: 0;
-}
-
-.sorting-item a:hover path {
-  fill: #231f20;
-}
-
-.active-item a:hover path{
-  fill: #ee3643;
-}
-
-.active-item path  {
-  fill: #ee3643;
-}
-
-.sort-up {
-  position: absolute;
-  right: 49px;
-  top: 11px;
-}
-
-.sort-down {
-  position: absolute;
-  right: 17px;
-  top: 11px;
 }
 
 .pagination-list {
