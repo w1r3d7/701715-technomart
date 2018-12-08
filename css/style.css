@@ -1692,8 +1692,8 @@ fieldset.power {
   margin-right: 65px;
 }
 
-.sorting-item a:not(.sort-down):not(.sort-up):hover,
-.sorting-item a:not(.sort-down):not(.sort-up):focus {
+.sorting-item a:hover,
+.sorting-item a:focus {
   color: #000000;
   border-bottom: 1px solid #ee3643;
 }
@@ -1750,7 +1750,6 @@ a.sort-up {
   border-width: 10px 5.5px 0 5.5px;
   border-color: #c5c5c5 transparent transparent transparent;
 }
-
 
 .active-item a {
   color: #ee3643;
