@@ -98,18 +98,25 @@
               </fieldset>
               <fieldset class="manufacturer">
                 <legend>Производители:</legend>
-                <label><input type="checkbox" checked>BOSCH</label>
-                <label><input type="checkbox">Интерскол</label>
-                <label><input type="checkbox" checked>Makita</label>
-                <label><input type="checkbox">Dewalt</label>
-                <label><input type="checkbox">Hitachi</label>
+                <input id="bosch" type="checkbox" checked>
+                <label for="bosch">BOSCH</label>
+                <input id="interskol" type="checkbox">
+                <label for="interskol">Интерскол</label>
+                <input id="makita" type="checkbox" checked>
+                <label for="makita">Makita</label>
+                <input id="dewalt" type="checkbox">
+                <label for="dewalt">Dewalt</label>
+                <input id="hitachi" type="checkbox">
+                <label for="hitachi">Hitachi</label>
               </fieldset>
               <fieldset class="power">
                 <legend>Питание:</legend>
-                <label><input type="radio" name="power" checked>Аккумуляторные</label>
-                <label><input type="radio" name="power">Сетевые</label>
+                <input id="accumulator" type="radio" name="power" checked>
+                <label for="accumulator">Аккумуляторные</label>
+                <input id="network" type="radio" name="power">
+                <label for="network">Сетевые</label>
               </fieldset>
-              <button type="submit">Показать</button>
+              <button class="btn" type="submit">Показать</button>
             </form>
           </section>
           <section class="product-list">
@@ -267,8 +274,8 @@
         <h2>Товар добавлен в корзину!</h2>
         <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
         <div class="modal-cart-wrapper">
-          <a href="#">Оформить заказ</a>
-          <a href="#">Продолжить покупки</a>
+          <a class="btn" href="#">Оформить заказ</a>
+          <a class="btn" href="#">Продолжить покупки</a>
         </div>
       </section>
     </main>
