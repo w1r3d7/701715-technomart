@@ -1304,7 +1304,6 @@ button.active-button {
 }
 
 .breadcrumb {
-  
   display: flex;
   padding: 0;
   margin: 0;
@@ -1630,8 +1629,6 @@ a.sort-up {
 
 .catalog-item:hover {
   box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
-
-  transition: 0.5s;
 }
 
 .img-block {
@@ -1828,6 +1825,38 @@ a.sort-up {
 
   border: 1px solid #ee3643;
 }
+
+.modal-cart-add {
+  position: fixed;
+  z-index: 1;
+
+  display: block;
+
+  box-sizing: border-box;
+  top: 50%;
+  left: 50%;
+  width: 620px;
+  height: 275px;
+  transform: translateX(-50%) translateY(-50%);
+  box-shadow: 0px -7px 0px #ff5257,
+              0px 20px 40px rgba(0, 0, 0, 0.75);
+  background-color: #ffffff;
+}
+
+.modal-cart-add h2 {
+  margin: 0;
+
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.modal-cart-wrapper {
+  display: flex;
+
+  background-color: #f1f1f1;
+}
+
 
 .about-products {
   padding-top: 62px; 
