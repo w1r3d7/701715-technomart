@@ -54,7 +54,7 @@ input[type="radio"].visually-hidden {
 }
 
 .menu-wrapper {
-  padding-bottom: 64px;
+  padding-bottom: 65px;
 
   color: #ffffff;
 
@@ -287,18 +287,16 @@ input[type="radio"].visually-hidden {
 
 .header-contacts {
   width: 270px;
-  padding-right: 31px;
-
-  margin-right: 20px;
 }
 
 .header-phone {
   position: relative;
   display: block;
   padding-right: 39px;
-  padding-left: 71px;
+  padding-left: 72px;
   padding-top: 10px;
   padding-bottom: 8px;
+  margin-bottom: 4px;
 
   font-size: 21px;
   line-height: 21px;
@@ -322,8 +320,6 @@ input[type="radio"].visually-hidden {
 }
 
 .header-address {
-  padding-top: 5px;
-
   font-size: 14px;
   font-style: normal;
   line-height: 24px;
@@ -363,8 +359,8 @@ input[type="radio"].visually-hidden {
 .user-navigation-list {
   display: flex;
   padding: 0;
-  padding-left: 20px;
   margin: 0;
+  margin-left: auto;
   width: 280px;
 
   list-style: none;
@@ -405,6 +401,7 @@ input[type="radio"].visually-hidden {
 }
 
 .profile {
+  margin-left: auto;
   width: 299px;
 }
 
@@ -424,8 +421,16 @@ input[type="radio"].visually-hidden {
 }
 
 .log-in {
+  display: block;
   padding-left: 13px;
   padding-right: 32px;
+  width: 264px;
+  box-sizing: border-box;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
 }
 
 .log-in svg {
@@ -837,9 +842,6 @@ input[type="radio"].visually-hidden {
 .promo-title {
   margin: 0;
   padding: 0;
-  padding-left: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
 
   font-weight: 400;
 
@@ -849,9 +851,13 @@ input[type="radio"].visually-hidden {
 .popular-heading {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  
   margin-bottom: 20px;
-
+  padding-top: 26px;
+  padding-left: 30px;
+  padding-bottom: 26px;
+  
+  align-items: center;
   background-color: #f9f5f0;
 }
 
