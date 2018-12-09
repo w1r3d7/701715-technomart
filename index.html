@@ -192,20 +192,20 @@
           <p class="section-text">Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="section-slider">
             <ul class="buttons-list">
-              <li class="buttons-item"><button class="active-button" type="button">Доставка</button></li>
-              <li class="buttons-item"><button type="button">Гарантия</button></li>
-              <li class="buttons-item"><button type="button">Кредит</button></li>
+              <li class="buttons-item"><button class="delivery-btn active-button" id="del" onclick="active(this)" type="button">Доставка</button></li>
+              <li class="buttons-item"><button class="guarantee-btn" id="gua" onclick="active(this)" type="button">Гарантия</button></li>
+              <li class="buttons-item"><button class="credit-btn" id="cre" onclick="active(this)" type="button">Кредит</button></li>
             </ul>
             <ul class="services-list">
-              <li class="services-item">
+              <li class="services-item delivery-item" id="delivery-item">
                 <h4 class="services-item-title">Доставка</h4>
                 <p class="services-item-text delivery">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
               </li>
-              <li class="services-item" style="display: none">
+              <li class="services-item guarantee-item" id="guarantee-item">
                 <h4 class="services-item-title">Гарантия</h4>
                 <p class="services-item-text guarantee">Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. <br> Дом уж восстановите как-нибудь сами.</p>
               </li>
-              <li class="services-item" style="display: none">
+              <li class="services-item credit-item" id="credit-item">
                 <h4 class="services-item-title">Кредит</h4>
                 <p class="services-item-text credit">Залезть в долговую яму стало проще! <br> Кредитные консультанты придут вам на помощь.</p>
                 <a class="btn" href="#">Отправить заявку</a>
@@ -300,5 +300,6 @@
       </div>
     </footer>
     <script src="js/slider.js"></script>
+    <script src="js/second-slider.js"></script>
   </body>
 </html>

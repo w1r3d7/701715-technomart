@@ -114,12 +114,12 @@ input[type="radio"].visually-hidden {
 
 .search-form svg {
   position: absolute;
-
-  width: 17px;
-  height: 17px;
   top: 13px;
   left: 17px;
 
+  width: 17px;
+  height: 17px;
+  
   opacity: 0.3;
 }
 
@@ -1118,6 +1118,14 @@ button.active-button {
   box-shadow: inset 0px 1px 0px #ffffff,
                     0px 1px 0px #ffffff;
   ;
+}
+
+.services-item {
+  display: none;
+}
+
+.delivery-item {
+  display: block;
 }
 
 .services-item-title {
