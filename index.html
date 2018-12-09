@@ -74,23 +74,27 @@
             </div>
             <div class="slider">
               <ul class="slider-list">
-                <li class="slider-item">
+                <li class="slider-item slider-item-active">
                   <img class="slider-image" src="img/main-slider-1.jpg" alt="Дрели - соседям на радость." width="620" height="266">
                   <p class="slider-title">Дрели</p>
                   <p class="slider-text">Соседям на радость!</p>
                   <a class="btn btn-slider" href="catalog.html">Открыть каталог</a>
                 </li>
-                <li class="slider-item" style="display:none">
+                <li class="slider-item">
                     <img class="slider-image" src="img/main-slider-2.jpg" alt="Перфораторы - настоящие мужские игрушки." width="620" height="266">
                   <p class="slider-title">Перфораторы</p>
                   <p class="slider-text">Настоящие мужские игрушки</p>
                   <a class="btn btn-slider" href="catalog.html">Открыть каталог</a>
                 </li>
               </ul>
-              <div class="slider-controls visually-hidden">
-                <button class="slide-left" type="button">Слайд влево</button>
-                <button class="slide-right" type="button">Слайд вправо</button>
+              <div class="slider-controls">
+                <button class="slide-left" type="button"><span class="visually-hidden">Слайд влево</span></button>
+                <button class="slide-right" type="button"><span class="visually-hidden">Слайд вправо</span></button>
               </div>
+              <nav class="pagination">
+                <button class="pagination-btn pagination-btn-active"></button>
+                <button class="pagination-btn"></button>
+              </nav>
             </div>
           </div>
           <div class="right-column-tiles">
@@ -295,5 +299,6 @@
        </div>
       </div>
     </footer>
+    <script src="js/slider.js"></script>
   </body>
 </html>
