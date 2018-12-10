@@ -1742,6 +1742,7 @@ fieldset.power {
 
   font-size: 15px;
   line-height: 20px;
+  user-select: none;
 }
 
 .filter-form button {
