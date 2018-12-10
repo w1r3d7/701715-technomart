@@ -1511,7 +1511,7 @@ fieldset.manufacturer {
 }
 
 fieldset.price {
-  padding-bottom: 21px;
+  padding-bottom: 24px;
 }
 
 fieldset.power {
@@ -1522,12 +1522,48 @@ fieldset.power {
   padding-top: 12px
 }
 
-.price-slider {
-  
+.price-range {
+  position: relative;
+
   margin-bottom: 9px; 
-  height: 80px;
+  padding: 37px 20px 40px 20px;
+  
 
   background-color: #f7f3ec;
+}
+
+.scale {
+  height: 2px;
+
+  background-color: #d7dcde;
+}
+
+.bar {
+  height: 2px;
+  width: 80%;
+  background-color: #00ca74;
+}
+
+.handle {
+  position: absolute;
+  
+  width: 4px;
+  height: 4px;
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.handle-left {
+  top: 28px;
+  left: 20px;
+}
+
+.handle-right {
+  top: 28px;
+  right: 40px;
 }
 
 .price-columns {
@@ -1671,6 +1707,7 @@ fieldset.power {
 .price input {
   width: 95px;
   height: 38px;
+  padding: 0;
 
   font-size: 17px;
   line-height: 18px;
