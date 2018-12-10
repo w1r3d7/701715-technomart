@@ -1107,6 +1107,7 @@ input[type="radio"].visually-hidden {
   border: 0;
   box-shadow: inset 0px 1px 0px #405069,
                     0px 1px 0px #293449;
+  cursor: pointer;
 }
 
 button.active-button {
@@ -1204,13 +1205,17 @@ button.active-button {
   width: 300px;
 }
 
-.contacts img {
+.map-link {
+  display: block;
+
   margin-bottom: 37px;
 }
 
 .btn-contacts {
   width: 100%;
   padding-right: 35px;
+
+  cursor: pointer;
 }
 
 
@@ -1582,6 +1587,8 @@ fieldset.power {
 .manufacturer label, 
 .power label {
   position: relative;
+
+  cursor: pointer;
 }
 /* 
 .manufacturer label::before {
@@ -1760,6 +1767,8 @@ fieldset.power {
   color: #000000;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
+
+  cursor: pointer;
 }
 
 
@@ -2008,6 +2017,7 @@ a.sort-up {
 
   background-color: #ffffff;
   border: 3px solid #63a63e;
+  cursor: pointer;
 }
 
 .hover-links button:hover,
@@ -2358,6 +2368,8 @@ ul.footer-navigation-list-2 {
   border-radius: 50%;
 
   background-color: #212a3a;
+
+  cursor: pointer;
 }
 
 .social-item:hover,
