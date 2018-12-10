@@ -962,9 +962,9 @@ input[type="radio"].visually-hidden {
 }
 
 .services {
+  min-height: 455px;
   padding-top: 66px;
-  padding-bottom: 102px;
-  margin-bottom: 75px;
+  margin-bottom: 80px;
 
   background-color: #f4f8f9;
 }
