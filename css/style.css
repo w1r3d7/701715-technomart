@@ -504,6 +504,7 @@ input[type="radio"].visually-hidden {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0px;
   padding: 0px;
@@ -1093,6 +1094,7 @@ input[type="radio"].visually-hidden {
   box-shadow: inset 0px 1px 0px #405069,
                     0px 1px 0px #293449;
   cursor: pointer;
+  outline: none;
 }
 
 button.active-button {
