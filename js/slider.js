@@ -114,10 +114,10 @@ closeModal[0].onclick = function () {
 }
 
 openMap.onclick = function () {
+  openMap.removeAttribute('href');
   mapModal.classList.add('active-modal');
 }
 
 closeModal[1].onclick = function () {
-  prevent.defa
   mapModal.classList.remove('active-modal');
 }
