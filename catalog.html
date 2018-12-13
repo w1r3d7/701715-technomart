@@ -13,7 +13,7 @@
       <div class="secondary-menu-wrapper">
         <div class="secondary-menu container">
             <a class="logo-link" href="index.html">Техномарт</a>
-            <form class="search-form" method="GET" action="https://echo.htmlacedemy.ru">
+            <form class="search-form" method="GET" action="https://echo.htmlacademy.ru">
               <label class="visually-hidden" for="search">Поле поиска</label>
               <input class="search" id="search" type="search" placeholder="Поиск:">
               <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
@@ -51,8 +51,8 @@
                 </a>
               </div>
               <div class="profile-navigation">
-                <a href="#">Мои заказы</a>
-                <a href="#">Личный кабинет</a>
+                <a class="my-orders" href="#">Мои заказы</a>
+                <a class="personal-cabinet"   href="#">Личный кабинет</a>
               </div>
           </div>
         </div>
@@ -83,7 +83,7 @@
         <div class="catalog-columns">
           <section class="filter">
             <h2 class="visually-hidden">Фильтр товаров</h2>
-            <form class="filter-form" method="GET" action="https://echo.htmlacedemy.ru/" >
+            <form class="filter-form" method="POST" action="https://echo.htmlacademy.ru/" >
               <h4 class="filter-title">Фильтр:</h4>
               <fieldset class="price">
                 <legend>Цена:</legend>
@@ -95,31 +95,31 @@
                   <div class="handle handle-right"></div>
                 </div>
                 <div class="price-columns">
-                  <label class="visually-hidden" for="min-price">Минимальная цена</label>
-                  <input id="min-price" type="text" placeholder="0">
+                  <label class="visually-hidden" for="min-price" >Минимальная цена</label>
+                  <input id="min-price" type="text" value="0" name="min-price">
                   <span>—</span>
-                  <label class="visually-hidden" for="max-price">Максимальная цена</label>
-                  <input id="max-price" type="text" placeholder="30000">
+                  <label class="visually-hidden" for="max-price" >Максимальная цена</label>
+                  <input id="max-price" type="text" value="30000" name="max-price">
                 </div>
               </fieldset>
               <fieldset class="manufacturer">
                 <legend>Производители:</legend>
-                <input id="bosch" type="checkbox" checked>
+                <input class="visually-hidden" id="bosch" type="checkbox" name="bosch" checked>
                 <label for="bosch">BOSCH</label>
-                <input id="interskol" type="checkbox">
+                <input class="visually-hidden" id="interskol" type="checkbox" name="interskol">
                 <label for="interskol">Интерскол</label>
-                <input id="makita" type="checkbox" checked>
+                <input class="visually-hidden" id="makita" type="checkbox" name="makita" checked>
                 <label for="makita">Makita</label>
-                <input id="dewalt" type="checkbox">
+                <input class="visually-hidden" id="dewalt" type="checkbox" name="dewalt">
                 <label for="dewalt">Dewalt</label>
-                <input id="hitachi" type="checkbox">
+                <input class="visually-hidden" id="hitachi" type="checkbox" name="hitachi">
                 <label for="hitachi">Hitachi</label>
               </fieldset>
               <fieldset class="power">
                 <legend>Питание:</legend>
-                <input id="accumulator" type="radio" name="power" checked>
+                <input class="visually-hidden" id="accumulator" type="radio" name="power" checked>
                 <label for="accumulator">Аккумуляторные</label>
-                <input id="network" type="radio" name="power">
+                <input class="visually-hidden" id="network" type="radio" name="power">
                 <label for="network">Сетевые</label>
               </fieldset>
               <button class="btn" type="submit">Показать</button>

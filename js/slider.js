@@ -62,3 +62,62 @@
   });
 
 })();
+
+
+function active(elem) {
+  var a = document.getElementsByTagName('button')
+  for (var i = 0; i < a.length; i++) {
+      a[i].classList.remove('active-button')
+  }
+  elem.classList.add('active-button');
+
+  var delivery = document.getElementById('del');
+  var deliveryItem = document.getElementById('delivery-item');
+  var guarantee = document.getElementById('gua');
+  var guaranteItem = document.getElementById('guarantee-item');
+  var credit = document.getElementById('cre');
+  var creditItem = document.getElementById('credit-item');
+
+  if(delivery.classList.contains('active-button')) {
+      deliveryItem.classList.add('service-active');
+  } else {
+      deliveryItem.classList.remove('service-active');
+  }
+
+  if(guarantee.classList.contains('active-button')) {
+      guaranteItem.classList.add('service-active');
+  } else {
+      guaranteItem.classList.remove('service-active');
+  }
+
+  if(credit.classList.contains('active-button')) {
+      creditItem.classList.add('service-active');
+  } else {
+      creditItem.classList.remove('service-active');
+  }
+}
+
+var feedbackModal = document.getElementById('feedback-modal');
+var openFeedback = document.getElementById('open-feedback-modal');
+
+var closeModal = document.getElementsByClassName('modal-close');
+
+var mapModal = document.getElementById('map-modal');
+var openMap = document.getElementById('open-map-modal');
+
+openFeedback.onclick = function () {
+  feedbackModal.classList.add('active-modal');
+}
+
+closeModal[0].onclick = function () {
+  feedbackModal.classList.remove('active-modal');
+}
+
+openMap.onclick = function () {
+  mapModal.classList.add('active-modal');
+}
+
+closeModal[1].onclick = function () {
+  prevent.defa
+  mapModal.classList.remove('active-modal');
+}
