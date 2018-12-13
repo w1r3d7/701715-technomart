@@ -234,21 +234,22 @@
         </section>
       </div>
       <section class="modal modal-login" id="feedback-modal">
-        <div class="feedback-container">
           <h2 class="visually-hidden">Форма обратной связи</h2>
           <form class="feedback-form" method="POST" action="https://echo.htmlacademy.ru/">
-            <div class="form-columns">
-              <div class="form-column">
-                <label for="feedback-name">Ваше имя:</label>
-                <input id="feedback-name" type="text" placeholder="Имя Фамилия">
+            <div class="feedback-container">
+              <div class="form-columns">
+                <div class="form-column">
+                  <label for="feedback-name">Ваше имя:</label>
+                  <input id="feedback-name" type="text" placeholder="Имя Фамилия">
+                </div>
+                <div class="form-column">
+                  <label for="feedback-email">Ваш e-mail:</label>
+                  <input id="feedback-email" type="email" placeholder="email@example.com">
+                </div>
               </div>
-              <div class="form-column">
-                <label for="feedback-email">Ваш e-mail:</label>
-                <input id="feedback-email" type="email" placeholder="email@example.com">
-              </div>
+              <label for="feedback-text">Текст письма:</label>
+              <textarea id="feedback-text" placeholder="В свободной форме"></textarea>
             </div>
-            <label for="feedback-text">Текст письма:</label>
-            <textarea id="feedback-text" placeholder="В свободной форме"></textarea>
           <div class="feedback-wrapper">
               <button class="btn" type="submit">Отправить</button>
           </div>
