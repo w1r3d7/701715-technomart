@@ -1463,8 +1463,11 @@ button.active-button {
           box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
   background-color: #ffffff;
 
-  animation-name: modal;
-  animation-duration: 3s;
+  -webkit-animation-name: modal;
+
+          animation-name: modal;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
 .modal-cart-add {
@@ -1550,26 +1553,47 @@ button.active-button {
 .iframe-map {
   position: absolute;
   top: 0;
+  right: 0;
   z-index: 1;
+}
+
+@-webkit-keyframes modal {
+  0% {
+    -webkit-transform: scale(0.5) translateX(200%) translateY(200%);
+            transform: scale(0.5) translateX(200%) translateY(200%);
+  }
+  90% {
+    -webkit-transform: translateX(-60%) translateY(-60%);
+            transform: translateX(-60%) translateY(-60%);
+  }
+  100% {
+    -webkit-transform: scale(1) translateX(-50%) translateY(-50%);
+            transform: scale(1) translateX(-50%) translateY(-50%);
+
+  }
 }
 
 @keyframes modal {
   0% {
-    transform: scale(0.5) translateX(200%) translateY(200%);
+    -webkit-transform: scale(0.5) translateX(200%) translateY(200%);
+            transform: scale(0.5) translateX(200%) translateY(200%);
   }
   90% {
-    transform: translateX(-60%) translateY(-60%);
+    -webkit-transform: translateX(-60%) translateY(-60%);
+            transform: translateX(-60%) translateY(-60%);
   }
   100% {
-    transform: scale(1) translateX(-50%) translateY(-50%);
+    -webkit-transform: scale(1) translateX(-50%) translateY(-50%);
+            transform: scale(1) translateX(-50%) translateY(-50%);
 
   }
 }
 
-@keyframes error-modal {
+@-webkit-keyframes error-modal {
   0%,
   100% {
-    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
   }
 
   10%,
@@ -1577,14 +1601,51 @@ button.active-button {
   50%,
   70%,
   90% {
-    transform: translateX(-60%) translateY(-50%);
+    -webkit-transform: translateX(-60%) translateY(-50%);
+            transform: translateX(-60%) translateY(-50%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(-40%) translateY(-50%);
+    -webkit-transform: translateX(-40%) translateY(-50%);
+            transform: translateX(-40%) translateY(-50%);
+  }
+}
+
+@keyframes error-modal {
+  0%,
+  100% {
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-60%) translateY(-50%);
+            transform: translateX(-60%) translateY(-50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(-40%) translateY(-50%);
+            transform: translateX(-40%) translateY(-50%);
+  }
+}
+
+@-webkit-keyframes modal-ok {
+  0% {
+    tranform: scale(1) translateX(-50%) translateY(-50%);
+  }
+  100% {
+    -webkit-transform: scale(0.5) translateX(200%) translateY(-400%);
+            transform: scale(0.5) translateX(200%) translateY(-400%);
   }
 }
 
@@ -1593,24 +1654,31 @@ button.active-button {
     tranform: scale(1) translateX(-50%) translateY(-50%);
   }
   100% {
-    transform: scale(0.5) translateX(200%) translateY(-400%);
+    -webkit-transform: scale(0.5) translateX(200%) translateY(-400%);
+            transform: scale(0.5) translateX(200%) translateY(-400%);
   }
 }
 
 .active-modal {
   display: block;
-  animation-name: modal;
-  animation-duration: 0.7s;
+  -webkit-animation-name: modal;
+          animation-name: modal;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
 }
 
 .error-modal {
-  animation-name: error-modal;
-  animation-duration: 1s;
+  -webkit-animation-name: error-modal;
+          animation-name: error-modal;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .modal-ok {
-  animation-name: modal-ok;
-  animation-duration: 0.2s;
+  -webkit-animation-name: modal-ok;
+          animation-name: modal-ok;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
 }
 
 /* CATALOG MAIN */
