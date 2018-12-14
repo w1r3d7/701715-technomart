@@ -118,7 +118,7 @@ form.addEventListener("submit", function (evt) {
   if (!inputName.value || !inputEmail.value ) {
     evt.preventDefault();
     feedbackModal.classList.remove('error-modal');
-    feedbackModal.offsetWidth = feedbackModal.offsetWidth;
+    void feedbackModal.offsetWidth;
     feedbackModal.classList.add("error-modal");
   } else {
     feedbackModal.classList.add('modal-ok');
