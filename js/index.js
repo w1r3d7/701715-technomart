@@ -54,13 +54,20 @@
     previousSlide();
   };
 
+  for (var i = 0; i < pagination.length; i++) {
+    pagination[i].addEventListener('click', function () {
+      goToSlide(i);
+    });
+  }
 
+  /* 
   pagination.forEach(function (elem, i) {
     elem.addEventListener('click', function () {
       goToSlide(i);
     });
   });
-
+  */
+  
 })();
 
 
