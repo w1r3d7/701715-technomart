@@ -1555,6 +1555,8 @@ button.active-button {
   top: 0;
   right: 0;
   z-index: 1;
+
+  border: 0;
 }
 
 @-webkit-keyframes modal {
@@ -1601,24 +1603,24 @@ button.active-button {
   50%,
   70%,
   90% {
-    -webkit-transform: translateX(-60%) translateY(-50%);
-            transform: translateX(-60%) translateY(-50%);
+    -webkit-transform: translateX(-55%) translateY(-50%);
+            transform: translateX(-55%) translateY(-50%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    -webkit-transform: translateX(-40%) translateY(-50%);
-            transform: translateX(-40%) translateY(-50%);
+    -webkit-transform: translateX(-45%) translateY(-50%);
+            transform: translateX(-45%) translateY(-50%);
   }
 }
 
 @keyframes error-modal {
   0%,
   100% {
-    -webkit-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-55%) translateY(-50%);
+            transform: translateX(-55%) translateY(-50%);
   }
 
   10%,
@@ -1634,8 +1636,8 @@ button.active-button {
   40%,
   60%,
   80% {
-    -webkit-transform: translateX(-40%) translateY(-50%);
-            transform: translateX(-40%) translateY(-50%);
+    -webkit-transform: translateX(-45%) translateY(-50%);
+            transform: translateX(-45%) translateY(-50%);
   }
 }
 

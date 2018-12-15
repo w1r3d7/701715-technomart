@@ -150,65 +150,26 @@ var output = document.querySelectorAll('output');
 var bookmarksPlus = 0;
 var cartPlus = 0;
 
-cartBook[0].addEventListener("click", function(evt){
-  evt.preventDefault();
-  bookmarksPlus++;
-  output[0].innerHTML = bookmarksPlus;
-  bookmarkBlock.classList.add('not-empty');
-});
-
-cartBook[1].addEventListener("click", function(evt){
-  evt.preventDefault();
-  bookmarksPlus++;
-  output[0].innerHTML = bookmarksPlus;
-  bookmarkBlock.classList.add('not-empty');
-});
-
-cartBook[2].addEventListener("click", function(evt){
-  evt.preventDefault();
-  bookmarksPlus++;
-  output[0].innerHTML = bookmarksPlus;
-  bookmarkBlock.classList.add('not-empty');
-});
-
-cartBook[3].addEventListener("click", function(evt){
-  evt.preventDefault();
-  bookmarksPlus++;
-  output[0].innerHTML = bookmarksPlus;
-  bookmarkBlock.classList.add('not-empty');
-});
-
-cartBuy[0].addEventListener("click", function(evt) {
+for (var i = 0; i < cartBuy.length; i++) {
+  cartBuy[i].addEventListener("click", function(evt) {
   evt.preventDefault();
   modalCart.classList.add('active-modal');
   cartPlus++;
   output[1].innerHTML = cartPlus;
   cartBlock.classList.add('not-empty');
 });
+}
 
-cartBuy[1].addEventListener("click", function(evt) {
+for (var i = 0; i < cartBook.length; i++) {
+cartBook[i].addEventListener("click", function(evt){
   evt.preventDefault();
-  modalCart.classList.add('active-modal');
-  cartPlus++;
-  output[1].innerHTML = cartPlus;
-  cartBlock.classList.add('not-empty');
+  bookmarksPlus++;
+  output[0].innerHTML = bookmarksPlus;
+  bookmarkBlock.classList.add('not-empty');
 });
 
-cartBuy[2].addEventListener("click", function(evt) {
-  evt.preventDefault();
-  modalCart.classList.add('active-modal');
-  cartPlus++;
-  output[1].innerHTML = cartPlus;
-  cartBlock.classList.add('not-empty');
-});
+}
 
-cartBuy[3].addEventListener("click", function(evt) {
-  evt.preventDefault();
-  modalCart.classList.add('active-modal');
-  cartPlus++;
-  output[1].innerHTML = cartPlus;
-  cartBlock.classList.add('not-empty');
-});
 
 cartCon.onclick = function (evt) {
   evt.preventDefault();
