@@ -171,7 +171,6 @@ cartBook[i].addEventListener("click", function(evt){
 
 }
 
-
 cartCon.onclick = function (evt) {
   evt.preventDefault();
   modalCart.classList.remove('active-modal');
