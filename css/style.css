@@ -2332,11 +2332,11 @@ a.sort-up {
 
 .hover-links {
   position: absolute;
+  top: 0;
+  right: 0;
 
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -2413,6 +2413,7 @@ a.sort-up {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+  width: 80%; /* IE 11 */
   margin: 0;
   margin-bottom: 11px;
   padding-left: 30px;
