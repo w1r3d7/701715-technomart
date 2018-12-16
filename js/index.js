@@ -44,18 +44,18 @@ var closeModal = document.getElementsByClassName('modal-close');
 var mapModal = document.querySelector('.modal-map');
 var openMap = document.querySelector('.map-link');
 
-openFeedback.addEventListener("click", function (evt) {
+openFeedback.addEventListener('click', function (evt) {
   evt.preventDefault();
   feedbackModal.classList.add('active-modal');
   inputName.focus();
 });
 
-form.addEventListener("submit", function (evt) {
+form.addEventListener('submit', function (evt) {
   if (!inputName.value || !inputEmail.value ) {
     evt.preventDefault();
     feedbackModal.classList.remove('error-modal');
     void feedbackModal.offsetWidth;
-    feedbackModal.classList.add("error-modal");
+    feedbackModal.classList.add('error-modal');
   }
 });
 
@@ -84,7 +84,7 @@ var bookmarksPlus = 0;
 var cartPlus = 0;
 
 for (var i = 0; i < cartBuy.length; i++) {
-  cartBuy[i].addEventListener("click", function(evt) {
+  cartBuy[i].addEventListener('click', function(evt) {
   evt.preventDefault();
   modalCart.classList.add('active-modal');
   cartPlus++;
@@ -94,7 +94,7 @@ for (var i = 0; i < cartBuy.length; i++) {
 }
 
 for (var i = 0; i < cartBook.length; i++) {
-cartBook[i].addEventListener("click", function(evt){
+cartBook[i].addEventListener('click', function(evt){
   evt.preventDefault();
   bookmarksPlus++;
   output[0].innerHTML = bookmarksPlus;
@@ -114,30 +114,30 @@ closeModal[2].onclick = function (evt) {
 }
 
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (feedbackModal.classList.contains("active-modal")) {
-      feedbackModal.classList.remove("active-modal");
-      feedbackModal.classList.remove("error-modal");
+    if (feedbackModal.classList.contains('active-modal')) {
+      feedbackModal.classList.remove('active-modal');
+      feedbackModal.classList.remove('error-modal');
     }
   }
 });
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (mapModal.classList.contains("active-modal")) {
-      mapModal.classList.remove("active-modal");
+    if (mapModal.classList.contains('active-modal')) {
+      mapModal.classList.remove('active-modal');
     }
   }
 });
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (modalCart.classList.contains("active-modal")) {
-      modalCart.classList.remove("active-modal");
+    if (modalCart.classList.contains('active-modal')) {
+      modalCart.classList.remove('active-modal');
     }
   }
 });

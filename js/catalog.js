@@ -24,7 +24,7 @@ closeModal.onclick = function (evt) {
 }
 
 for (var i = 0; i < cartBuy.length; i++) {
-        cartBuy[i].addEventListener("click", function(evt) {
+        cartBuy[i].addEventListener('click', function(evt) {
         evt.preventDefault();
         modalCart.classList.add('active-modal');
         cartPlus++;
@@ -34,7 +34,7 @@ for (var i = 0; i < cartBuy.length; i++) {
 }
 
 for (var i = 0; i < cartBook.length; i++) {
-    cartBook[i].addEventListener("click", function(evt){
+    cartBook[i].addEventListener('click', function(evt){
         evt.preventDefault();
         bookmarksPlus++;
         output[0].innerHTML = bookmarksPlus;
@@ -69,7 +69,7 @@ closeModal.onclick = function (evt) {
 }
 
 for (var i = 0; i < cartBuy.length; i++) {
-        cartBuy[i].addEventListener("click", function(evt) {
+        cartBuy[i].addEventListener('click', function(evt) {
         evt.preventDefault();
         modalCart.classList.add('active-modal');
         cartPlus++;
@@ -79,7 +79,7 @@ for (var i = 0; i < cartBuy.length; i++) {
 }
 
 for (var i = 0; i < cartBook.length; i++) {
-    cartBook[i].addEventListener("click", function(evt){
+    cartBook[i].addEventListener('click', function(evt){
         evt.preventDefault();
         bookmarksPlus++;
         output[0].innerHTML = bookmarksPlus;
@@ -90,11 +90,11 @@ for (var i = 0; i < cartBook.length; i++) {
 
 })();
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener('keydown', function (evt) {
         if (evt.keyCode === 27) {
           evt.preventDefault();
-          if (modalCart.classList.contains("active-modal")) {
-            modalCart.classList.remove("active-modal");
+          if (modalCart.classList.contains('active-modal')) {
+            modalCart.classList.remove('active-modal');
           }
         }
       })
