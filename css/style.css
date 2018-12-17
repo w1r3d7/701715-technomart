@@ -16,7 +16,7 @@ img {
   height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active),
+.visually-hidden,
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
@@ -1143,6 +1143,7 @@ button.active-button {
 
 .btn-contacts {
   width: 100%;
+  box-sizing: border-box;
   padding-right: 35px;
   cursor: pointer;
 }
@@ -1732,6 +1733,18 @@ fieldset.power {
 .manufacturer input:checked + label:hover::before,
 .manufacturer input:checked + label:hover::after {
   border-color: #b5b5b5;
+}
+
+.manufacturer input:disabled + label,
+.power input:disabled + label {
+  opacity: 0.4;
+}
+
+.manufacturer input:disabled + label::before,
+.manufacturer input:disabled + label::after,
+.power input:disabled + label::before,
+.power input:disabled + label::after {
+  opacity: 0.3;
 }
 
 .manufacturer input:focus + label,
