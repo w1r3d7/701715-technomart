@@ -12,7 +12,6 @@ var bookmarksPlus = 0;
 var cartPlus = 0;
 var closeModal = document.querySelector('.modal-close');
 
-
 cartCon.onclick = function (evt) {
         evt.preventDefault();
         modalCart.classList.remove('active-modal');
